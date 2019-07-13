@@ -1,6 +1,6 @@
-# py3project
+# Hackathon VonSlackbot
 
-Starting point for a python3 project
+A slack bot programmed to provide updates on new and trending hackathon topics.
 
 ## Local Development
 
