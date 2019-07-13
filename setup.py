@@ -8,7 +8,7 @@ with open("requirements.txt", "r") as require:
     requirements = require.read()
 
 setup(
-    name='py3project',
+    name='hacky-vonslacky',
     version=versionJSON["version"],
     install_requires=requirements,
     packages=find_packages(),
