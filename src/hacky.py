@@ -60,6 +60,6 @@ def format_hacky_message(message_data):
     return message_block
 
 
-data = kbra_ideas.get_posts(Fider.PostsTypes.MOST_WANTED)
+data = kbra_ideas.get_posts(Fider.PostSorting.MOST_WANTED)
 slack.post(format_hacky_message(data))
 
