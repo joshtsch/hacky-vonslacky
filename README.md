@@ -17,3 +17,9 @@ A slack bot programmed to provide updates on new and trending hackathon topics.
 This project uses pytest for executing tests
 
 `python setup.py test`
+
+## Todo
+
+- Authentication (OAuth2)
+- Refactor hacky.py
+- Needs more test (any even)

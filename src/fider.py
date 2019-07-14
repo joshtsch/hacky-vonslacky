@@ -14,7 +14,7 @@ class Fider:
         RECENT = 2
         TRENDING = 3
 
-    def get_posts(self, post_sorting):
+    def get_posts(self, post_sorting, post_filter=None):
         posts = Csv(os.path.join("csv", "posts.csv"))
 
         switch = {
@@ -24,7 +24,13 @@ class Fider:
             # @todo: How is trending calculated on fider? Update this.
             self.PostSorting.TRENDING: posts.sort("votes_count", reverse=True),
         }
-        return switch.get(post_sorting)
+        post_list = switch.get(post_sorting)
+
+        # @todo: allow for filtering on other fields and abstract to separate method
+        if post_filter is not None:
+            post_list = posts.filtered("tags", post_filter)
+
+        return post_list
 
     # @todo: make this work
     # https://requests-oauthlib.readthedocs.io/en/latest/oauth2_workflow.html
