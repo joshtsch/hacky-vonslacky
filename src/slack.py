@@ -10,9 +10,7 @@ class Slack:
         message = self.__format_message(message)
 
         r = requests.post(
-            self.url,
-            data=json.dumps(message),
-            headers={"Content-Type": "application/json"},
+            self.url, data=message, headers={"Content-Type": "application/json"}
         )
 
         if r.status_code != 200:
@@ -24,4 +22,12 @@ class Slack:
         return r.status_code
 
     def __format_message(self, message):
-        return message
+        return json.dumps(message)
+
+    def format_message_block(self, message, message_block=None):
+        if not message_block:
+            message_block = {"blocks": []}
+
+        message_block["blocks"].append(message)
+
+        return message_block
