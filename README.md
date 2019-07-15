@@ -1,5 +1,8 @@
 # Hacktorious VonSlackbot
 
+<p align="center">
+  <img width="200" height="200" src="./img/hacky.png">
+</p>
 A slack bot programmed to provide updates on new and trending hackathon topics.
 
 ## Local Development
