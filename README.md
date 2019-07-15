@@ -18,6 +18,10 @@ This project uses pytest for executing tests
 
 `python setup.py test`
 
+## Execute
+
+`python src/hacky.py`
+
 ## Todo
 
 - Authentication (OAuth2)
