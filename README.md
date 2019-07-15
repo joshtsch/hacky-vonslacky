@@ -1,4 +1,4 @@
-# Hackathon VonSlackbot
+# Hacktorious VonSlackbot
 
 A slack bot programmed to provide updates on new and trending hackathon topics.
 
