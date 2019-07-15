@@ -12,15 +12,15 @@ A slack bot programmed to provide updates on new and trending hackathon topics.
 
 `python setup.py develop`
 
+### Execute
+
+`python src/hacky.py`
+
 ## Run Tests
 
 This project uses pytest for executing tests
 
 `python setup.py test`
-
-## Execute
-
-`python src/hacky.py`
 
 ## Todo
 
