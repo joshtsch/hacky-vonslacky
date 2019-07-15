@@ -1,8 +1,9 @@
-# Hacktorious VonSlackbot
-
 <p align="center">
   <img width="200" height="200" src="./img/hacky.png">
 </p>
+
+# Hacktorious VonSlackbot
+
 A slack bot programmed to provide updates on new and trending hackathon topics.
 
 ## Local Development
@@ -30,3 +31,5 @@ This project uses pytest for executing tests
 - Authentication (OAuth2)
 - Refactor hacky.py
 - Needs more test (any even)
+- Add interactivity through slack commands
+- Set up feed on a cron
